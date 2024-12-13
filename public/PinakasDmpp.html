@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Πίνακας DMPP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/5b7f4030e6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/pinakasDmpp.css">
+
+
+</head>
+
+<body>
+    <div><a href="index.html"><button>Back</button></a></div>
+    <div class="container text-center">
+        <h1 id="top" class="bg-light py-4 text-info"><i class="fa-solid fa-droplet"></i> DMPP TABLE</h1>
+    </div>
+
+    <div class="container-sm">
+        <div class="row">
+
+
+
+
+            <!--Create,update,read and delete button-->
+            <div class="col-sm-3">
+                <div class=" buttons d-flex flex-column">
+
+
+                    <button class="d-flex-center btn btn-success " id="btn-create" data-bs-toggle="tooltip"
+                        data-bs-placement="top" title="Press to create a reciept"> <a
+                            href="#top"></a>Create</a></button>
+                    <button class="d-flex-center btn btn-warning " id="btn-update" data-bs-toggle="tooltip"
+                        data-bs-placement="top" title="Press to update a reciept">Update</button>
+                    <button class="d-flex-center btn btn-danger " id="btn-delete" data-bs-toggle="tooltip"
+                        data-bs-placement="top" title="Press to delete database">Delete All</button>
+
+                </div>
+            </div>
+
+            <!--Table-Form-->
+            <div class="col-sm-6">
+                <div class="form d-flex d-flex-column justify-content-center">
+                    <form class="w-75">
+                        <input type="text" name="Dmpp" id="DMPPID" class="form-control" placeholder="DMPP ID"
+                            autocomplete="off">
+                        <div class="">
+                            DMPP :
+                            <input type="text" name="Dmpp" id="DMPP" class="form-control m-0" placeholder="DMPP Name">
+                        </div>
+                        <div class="">
+                            DMP :
+                            <input type="text" name="Dmp" id="DMP" class="form-control m-0" placeholder="DMP">
+                        </div>
+                        <div class="">
+                            H3PO4 :
+                            <input type="text" name="H3po4" id="H3PO4" class="form-control m-0" placeholder="H3PO4">
+                        </div>
+                        <div class="">
+                            COLOR :
+                            <input type="text" name="GrColor" id="COLOR" class="form-control m-0" placeholder="COLOR">
+                        </div>
+                        <div class="">
+                            YELLOW :
+                            <input type="text" name="Yellow" id="YELLOW" class="form-control m-0" placeholder="YELLOW">
+                        </div>
+                        <div class="">
+                            BLUE :
+                            <input type="text" name="Blue" id="BLUE" class="form-control m-0" placeholder="BLUE">
+                        </div>
+                        <div class="">
+                            KILOS/TONS :
+                            <input type="text" name="Kilos" id="KILOS" class="form-control m-0" placeholder="KILOS/T">
+                        </div>
+                        <div class="">
+                            LITRE/TONS :
+                            <input type="text" name="Litre" id="LITRE" class="form-control m-0" placeholder="LITRE/T">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="buttons2 d-flex flex-column mb-3">
+                    <a href="#calculation-span" target="_self">
+                        <button class="btn btn-info" id="btn-calculate" data-bs-toggle="tooltip" data-bs-placement="top" title="Press for Calculation">
+                            Calculation
+                        </button>
+                    </a>
+                    <div class="insert mt-2">
+                        <input type="text" oninput="Multiby()" id="tons" placeholder="Insert Tons" class="form-control"
+                               data-bs-toggle="tooltip" data-bs-placement="top" title="Insert tons">
+                    </div>
+                </div>
+                <div class="d-flex flex-column">
+                    <a href="#seperation-span" target="_self">
+                        <button class="btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Press for Separation">
+                            Separation
+                        </button>
+                    </a>
+                    <div class="insert mt-2">
+                        <input type="text" oninput="DivitBy()" id="kilos" placeholder="Insert Kilos" class="form-control"
+                               data-bs-toggle="tooltip" data-bs-placement="top" title="Insert Kilos">
+                    </div>
+                </div>
+            </div>
+            
+    </div>
+    <br>
+    <div class="row">
+    <div class="col-12 col-sm-6 mb-3">
+        <div id="calculation-span" class="h-100">
+            <div class="ypologismos d-flex flex-column mb-3 p-3 border rounded bg-light h-100">
+                <span class="p-2" id="dmppname"></span>
+                <span class="p-2" id="dmpsum"></span>
+                <span class="p-2" id="h3po4sum"></span>
+                <span class="p-2" id="colorsum"></span>
+                <span class="p-2" id="yellowsum"></span>
+                <span class="p-2" id="bluesum"></span>
+                <span class="p-2" id="sum"></span>
+                <span class="p-2" id="k/t"></span>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-6 mb-3">
+        <div id="seperation-span" class="h-100">
+            <div class="diahorismos d-flex flex-column mb-3 p-3 border rounded bg-light h-100">
+                <span class="p-2" id="dmppname1"></span>
+                <span class="p-2" id="dmpsum1"></span>
+                <span class="p-2" id="h3po4sum1"></span>
+                <span class="p-2" id="colorsum1"></span>
+                <span class="p-2" id="yellowsum1"></span>
+                <span class="p-2" id="bluesum1"></span>
+                <span class="p-2" id="sum1"></span>
+                <span class="p-2" id="k/t1"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </div>
+    </div>
+
+    <div class="container">
+        <div class="table-responsive-sm">
+            <table class="table table-info table-hover table-bordered table-striped text-center mobile-table">
+                <thead>
+                    <tr>
+                        <th scope="col" data-label="ID">ID</th>
+                        <th scope="col" data-label="DMPP NAME">DMPP NAME</th>
+                        <th scope="col" data-label="DMP">DMP</th>
+                        <th scope="col" data-label="H3PO4">H3PO4</th>
+                        <th scope="col" data-label="COLOR">COLOR</th>
+                        <th scope="col" data-label="YELLOW">YELLOW</th>
+                        <th scope="col" data-label="BLUE">BLUE</th>
+                        <th scope="col" data-label="KILOS/T">KILOS/T</th>
+                        <th scope="col" data-label="LITRE/T">LITRE/T</th>
+                        <th scope="col" data-label="EDIT">EDIT</th>
+                        <th scope="col" data-label="DELETE">DELETE</th>
+                        <th scope="col" data-label="SELECT">SELECT</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <!-- Table content will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+              <!--  <tr>
+                     <tr>
+                        <td data-label="ID">1</td>
+                        <td data-label="DMPP NAME">Mark</td>
+                        <td data-label="DMP">Otto</td>
+                      
+                    </tr>
+                    <td><i class="fas fa-edit btnedit"></i></td>
+                    <td><i class="fas fa-trash-alt btndelete"></i></td>
+
+
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>Mark</td>
+                    <td>Mark</td>
+                    <td><i class="fas fa-edit btnedit"></i></td>
+                    <td><i class="fas fa-trash-alt btndelete"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>Mark</td>
+                    <td>Mark</td>
+                    <td><i class="fas fa-edit btnedit"></i></td>
+                    <td><i class="fas fa-trash-alt btndelete"></i></td>
+                </tr>-->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="myDiv"></div>
+
+    <div class="container text-center">
+        <div id="notfound"></div>
+    </div>
+
+
+
+
+    <!--Lables-->
+
+    <div class="w-100 btn btn-success insertmsg">
+        Data Inserted Successfully !!!
+    </div>
+    <div class="w-100 btn btn-warning updatemsg">
+        Data Updated...! Refresh Database to See Result
+    </div>
+    <div class="w-100 btn btn-danger deletemsg">
+        Data Deleted !!!
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+    <!--Dexie API-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dexie/2.0.4/dexie.min.js"
+        integrity="sha512-OPW5ku+bS0iQpI37fP9JjFoo2o5YUuxDOcA4UyIG9GpTHpY/Yat+rnJGTjynyeQzAQclbYWja9d2Rs8NbzhhOQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Custom Javascript main.js-->
+    <script src="/javascript/main.js" type="module"></script>
+    <script src="/javascript/calculate.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+body {
+ 
+  border: 10px solid rgba(8, 8, 1, 0.976);
+  padding-left: 20px;
+  padding-top: 20px;
+  
+
+  background-color: rgba(0, 0, 0, 0.925);
+}
+
+#button-start {
+  border-radius: 5px;
+  font-size: 40px;
+  text-align: center;
+  background-color: rgb(4, 145, 51);
+  color: white;
+}
+
+#button-start:active {
+  box-shadow: 3px 2px 22px 10px rgba(6, 255, 18, 0.952);
+}
+
+#button-stop {
+  border-radius: 5px;
+  font-size: 40px;
+  text-align: center;
+  background-color: rgb(255, 187, 1);
+  color: white;
+}
+
+#button-stop:active {
+  box-shadow: 3px 2px 22px 10px rgb(255, 187, 1);
+}
+
+#button-reset {
+  border-radius: 5px;
+  font-size: 40px;
+  text-align: center;
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+
+#button-reset:active {
+  box-shadow: 3px 2px 22px 10px rgb(252, 29, 0);
+}
+
+.wrapper {
+  color: aliceblue;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.hmst {
+  color: yellowgreen;
+  font-size: 30px;
+  text-align: center;
+}

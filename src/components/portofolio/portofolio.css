@@ -1,0 +1,104 @@
+.portofolio_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-top: 5px;
+}
+
+.portofolio_item {
+  background: var(--color-bg-variant);
+  padding: 3rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.portofolio_item:hover {
+  border-color: var(--color-primary-variant);
+  background: transparent;
+}
+
+.portofolio_item-image img {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  overflow: hidden;
+  margin: -2rem;
+  border-radius: 2.5rem;
+  object-fit: cover;
+  object-fit: fill;
+}
+
+.portofolio_item h3,
+h5 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.portofolio_item.cta {
+  display: flex;
+  gap: 1rem;
+  margin: 0rem;
+}
+
+/* ======= MEDIA QUERIES (MEDIUM DEVICES) =======*/
+@media screen and (max-width: 1340px) {
+  .portofolio_container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.1rem;
+    margin: auto;
+    
+    width: 80%;
+  }
+ 
+}
+
+/* ======= MEDIA QUERIES (MEDIUM DEVICES) =======*/
+@media screen and (max-width: 1280px) {
+  .portofolio_container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.1rem;
+    margin: auto;
+  }
+ 
+}
+
+/* ======= MEDIA QUERIES (MEDIUM DEVICES) =======*/
+@media screen and (max-width: 1024px) {
+  .portofolio_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .portofolio_item {
+    padding: 20px;
+  }
+  .portofolio_item-image img {
+    position: absolute;
+    padding: 10px;
+    overflow: hidden;
+    margin: -1rem;
+    border-radius: 2.5rem;
+    object-fit: cover;
+    object-fit: fill;
+  }
+}
+
+/* ======= MEDIA QUERIES (SMALL DEVICES) =======*/
+@media screen and (max-width: 600px) {
+  .portofolio_container {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+  .portofolio_item {
+    padding: 10px;
+  }
+
+  .portofolio_item-image img {
+    position: absolute;
+    padding: 10px;
+    overflow: hidden;
+    margin: -1rem;
+    border-radius: 2.5rem;
+    object-fit: cover;
+    object-fit: fill;
+  }
+}

@@ -1,0 +1,291 @@
+/* Existing styles */
+.w-50 p {
+  font-size: 16px;
+  text-align: left;
+  font-family: Lucida Sans;
+  width: 25%;
+  color: rgb(1, 0, 0);
+  margin-bottom: auto;
+}
+
+.w-75 input {
+  background: rgba(56, 214, 177, 0.092);
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ypologismos {
+  width: 50%;
+  margin: 0 auto;
+  border: solid 2px rgb(231, 216, 216);
+  border-radius: 2rem;
+  font-size: large;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  visibility: visible;
+}
+
+.diahorismos {
+  width: 50%;
+  margin: 0 auto;
+  border: solid 2px rgb(240, 244, 204);
+  border-radius: 2rem;
+  font-size: large;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+}
+
+.d-flex input {
+  margin: 0.9em 0em;
+  text-transform: uppercase;
+}
+
+.d-flex button {
+  margin: 0.2em 5em;
+  padding: 0.4em 0.5em;
+}
+
+#calculation-span, #seperation-span {
+  margin-bottom: 20px;
+}
+
+#dmppname {
+  margin: 1.5rem;
+  border-radius: 2.2rem;
+  background-color: #afc8e0;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#dmppname1 {
+  margin: 1.5rem;
+  background-color: #9ee1eb;
+  border-radius: 2.2rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container td:nth-child(2) {
+  font-weight: bold;
+}
+
+.container table {
+  margin: 50px auto;
+  width: 100%;
+}
+
+th {
+  border: solid 2px;
+  border-color: black;
+  border-radius: 2px;
+  font-size: large;
+}
+
+td {
+  border: solid 2px aqua;
+  border-radius: 5px;
+  font-size: medium;
+}
+
+table .btnedit {
+  color: rgb(33, 212, 30);
+  cursor: pointer;
+}
+
+table .btndelete {
+  color: red;
+  cursor: pointer;
+}
+
+table .btnselect {
+  color: rgb(21, 0, 255);
+  cursor: pointer;
+}
+
+/*BTNs*/
+.btn-icons {
+  flex-direction: column;
+}
+
+/* messages */
+.insertmsg,
+.updatemsg,
+.deletemsg {
+  position: absolute;
+  top: -40px;
+}
+
+.movedown {
+  animation: slideup 4.5s ease;
+}
+
+@keyframes slideup {
+  50% {
+    top: 0;
+  }
+  100% {
+    top: -40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .row {
+    display: block;
+  }
+
+  .col-sm-6 {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #calculation-span,
+  #seperation-span {
+    display: block;
+    width: 100%;
+    margin: 0 auto; /* Center without padding */
+    text-align: center; /* Center content */
+  }
+
+  .ypologismos {
+    margin: 20px auto;
+  }
+
+  .diahorismos {
+    margin: 20px auto;
+  }
+
+  .container table {
+    margin: 20px auto;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  th {
+    background-color: #f8f9fa;
+    border: none;
+    padding: 10px;
+  }
+
+  td {
+    padding: 10px;
+    border: none;
+    background-color: #ffffff;
+  }
+
+  .mobile-table {
+    border: none;
+  }
+
+  .mobile-table thead {
+    display: none;
+  }
+
+  .mobile-table tr {
+    margin-bottom: 1rem;
+    display: block;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .mobile-table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 0.5rem;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .mobile-table td::before {
+    content: attr(data-label);
+    position: static;
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+
+  .mobile-table td:last-child {
+    border-bottom: 0;
+  }
+
+  /* Action buttons styling */
+  .mobile-table td:nth-last-child(-n+3) {
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .mobile-table td:nth-last-child(-n+3)::before {
+    display: none;
+  }
+
+  /* Add some spacing between rows */
+  .mobile-table tbody tr {
+    margin-bottom: 1.5rem;
+  }
+
+  .btnedit, .btndelete, .btnselect {
+    padding: 0.5rem 1rem;
+    margin: 0.2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+
+  .btnedit:hover, .btndelete:hover, .btnselect:hover {
+    background-color: #0056b3;
+  }
+}
+
+@media (max-width: 576px) {
+  .ypologismos, .diahorismos {
+    min-height: 300px; /* Adjust this value as needed */
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .container {
+    padding: 0.5rem;
+  }
+
+  .table-responsive-sm {
+    margin: 0 -0.5rem;
+  }
+}
+
+.ypologismos, .diahorismos {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.ypologismos span, .diahorismos span {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.ypologismos span:last-child, .diahorismos span:last-child {
+  border-bottom: none;
+}
+
+/* Optional: Add some animation for better UX */
+.mobile-table tr {
+  transition: all 0.3s ease;
+}
+
+.mobile-table tr:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}

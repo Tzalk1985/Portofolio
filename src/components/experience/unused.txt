@@ -1,0 +1,256 @@
+{/*
+
+   
+import { ImHtmlFive2 } from "react-icons/im";
+import { FaCss3Alt } from "react-icons/fa";
+import { SiJavascript } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+import { SiBootstrap } from "react-icons/si";
+import { SiJquery } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { FaAngular } from "react-icons/fa";
+import { FaVuejs } from "react-icons/fa";
+import { FaPython } from "react-icons/fa";
+import { FaPhp } from "react-icons/fa";
+
+
+  const icons = [
+    { ImHtmlFive2 },
+    { FaCss3Alt },
+    { SiJavascript },
+    { SiTypescript },
+    { SiBootstrap },
+    { SiJquery },
+    { FaReact },
+    { FaAngular },
+    { FaVuejs },
+    { FaPython },
+    { FaPhp },
+  ];
+*/}
+
+{/*  
+    <div className="about-stats">
+            <div className="progress-bars">
+              <div className="progress-bar">
+                <ImHtmlFive2 className='experience_details-icon' />
+                <p className="prog-title">html</p>
+                <div className="progress-con">
+                  <p className="prog-text">80%</p>
+                  <div className="progress">
+                    <span className="html"></span>
+                  </div>
+                </div>
+              </div>
+              <div className="progress-bar">
+                <FaCss3Alt className='experience_details-icon' />
+                <p className="prog-title">css</p>
+                <div className="progress-con">
+                  <p className="prog-text">70%</p>
+                  <div className="progress">
+                    <span className="css"></span>
+                  </div>
+                </div>
+              </div>
+              <div className="progress-bar">
+                <SiJavascript className='experience_details-icon' />
+                <p className="prog-title">JavaScript</p>
+                <div className="progress-con">
+                  <p className="prog-text">50%</p>
+                  <div className="progress">
+                    <span className="js"></span>
+                  </div>
+                </div>
+              </div>
+              <div className="progress-bar">
+                <SiTypescript className='experience_details-icon' />
+                <p className="prog-title">typescript</p>
+                <div className="progress-con">
+                  <p className="prog-text">40%</p>
+                  <div className="progress">
+                    <span className="typescript"></span>
+                  </div>
+                </div>
+              </div>
+              <div className="progress-bar">
+                <SiBootstrap className='experience_details-icon' />
+                <p className="prog-title">bootstrap</p>
+                <div className="progress-con">
+                  <p className="prog-text">40%</p>
+                  <div className="progress">
+                    <span className="bootstrap"></span>
+                  </div>
+                </div>
+              </div>
+              <div className="progress-bar">
+                <SiJquery className='experience_details-icon' />
+                <p className="prog-title">jquery</p>
+                <div className="progress-con">
+                  <p className="prog-text">40%</p>
+                  <div className="progress">
+                    <span className="jquery"></span>
+                  </div>
+                </div>
+              </div>
+              <div className="progress-bar">
+                <FaReact className='experience_details-icon' />
+                <p className="prog-title">react </p>
+                <div className="progress-con">
+                  <p className="prog-text">60%</p>
+                  <div className="progress">
+                    <span className="react"></span>
+                  </div>
+                </div>
+              </div>
+              <div className="progress-bar">
+                <FaAngular className='experience_details-icon' />
+                <p className="prog-title">Angular</p>
+                <div className="progress-con">
+                  <p className="prog-text">40%</p>
+                  <div className="progress">
+                    <span className="angular"></span>
+                  </div>
+                </div>
+              </div>
+              <div className="progress-bar">
+                <FaVuejs className='experience_details-icon' />
+                <p className="prog-title">vue.js</p>
+                <div className="progress-con">
+                  <p className="prog-text">50%</p>
+                  <div className="progress">
+                    <span className="vue"></span>
+                  </div>
+                </div>
+              </div>
+              <div className="progress-bar">
+              <FaPython className='experience_details-icon' />
+                <p className="prog-title">python</p>
+                <div className="progress-con">
+                  <p className="prog-text">60%</p>
+                  <div className="progress">
+                    <span className="python"></span>
+                  </div>
+                </div>
+              </div>
+              <div className="progress-bar">
+              <FaPhp className='experience_details-icon' />
+                <p className="prog-title">php</p>
+                <div className="progress-con">
+                  <p className="prog-text">30%</p>
+                  <div className="progress">
+                    <span className="php"></span>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>*/}
+
+
+          css
+
+          .about-stats {
+  padding-bottom: 1rem;
+}
+
+.about-stats .progress-bars {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+.about-stats .progress-bars .progress-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.about-stats .progress-bars .progress-bar .prog-title {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--color-light);
+}
+
+.about-stats .progress-bars .progress-bar .progress-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .prog-text {
+  color: var(--color-primary);
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress {
+  width: 80%;
+  height: 0.45rem;
+  background-color: var(--color-primary-variant);
+  margin-left: 1rem;
+  position: relative;
+  border-radius: 5px 5px;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--color-primary);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  width: 60%;
+  border-radius: 8px;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .html {
+  width: 80%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .css {
+  width: 70%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .js {
+  width: 50%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .typescript {
+  width: 40%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .bootstrap {
+  width: 40%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .jquery {
+  width: 40%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .react {
+  width: 60%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .angular {
+  width: 40%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .vue {
+  width: 50%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .python {
+  width: 60%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .php {
+  width: 30%;
+}

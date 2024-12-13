@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/static/css/main.195328bf.css",
+    "main.js": "/static/js/main.ab08247a.js",
+    "static/media/photo1 dark.png": "/static/media/photo1 dark.2a1a40f9391c5d08a10e.png",
+    "static/media/Labohemebistro.png": "/static/media/Labohemebistro.8cab3cf4251c01614c6c.png",
+    "static/media/Rokani.png": "/static/media/Rokani.5188289aafbd603ea387.png",
+    "static/media/sunset.jpeg": "/static/media/sunset.86f16658a5461e61c46b.jpeg",
+    "static/media/EIM11.jpg": "/static/media/EIM11.9d519e39dfdc4757539f.jpg",
+    "static/media/eurochem.png": "/static/media/eurochem.8dc7673dd46759d52d01.png",
+    "static/media/protech-dmpp.jpg": "/static/media/protech-dmpp.8710fe6a6169b4f2482d.jpg",
+    "static/media/EIM3.png": "/static/media/EIM3.74684e349f0236ea75ad.png",
+    "static/media/EIM1.png": "/static/media/EIM1.8ef7859e0307c015b82d.png",
+    "static/media/EIM8.png": "/static/media/EIM8.290dc60b288d032bfad8.png",
+    "static/media/EIM6.png": "/static/media/EIM6.df173bfbd165382d5ba5.png",
+    "static/media/EIM4.png": "/static/media/EIM4.0313e15acb6b71a9ebb5.png",
+    "static/media/EIM7.png": "/static/media/EIM7.eddac5edc4f9fe00b7a5.png",
+    "static/media/EIM5.png": "/static/media/EIM5.5314518396659e2fe241.png",
+    "static/media/EIM2.png": "/static/media/EIM2.4f85349db35bfef58fba.png",
+    "static/media/estore.jpg": "/static/media/estore.460185414b774fb0f266.jpg",
+    "static/media/EIM10.png": "/static/media/EIM10.ef8eba6ea117bf761dd2.png",
+    "static/media/EIM9.png": "/static/media/EIM9.baa6e010337656bc19ce.png",
+    "static/media/jspcc.jpg": "/static/media/jspcc.c0ae288d5379774373b0.jpg",
+    "static/media/wordpress.jpg": "/static/media/wordpress.cffdd50a82c0941d75c2.jpg",
+    "static/media/crud.png": "/static/media/crud.6ba6843ca1285f5b16ea.png",
+    "static/media/centralme.png": "/static/media/centralme.6ddba96ea335ac26bdd9.png",
+    "static/media/Acrylic-Mirror-Digital-clock.jpg": "/static/media/Acrylic-Mirror-Digital-clock.9a1308415b525d9c7441.jpg",
+    "static/media/calculator.png": "/static/media/calculator.0d0e85e506e378e42f77.png",
+    "static/media/coloflipper.webp": "/static/media/coloflipper.2948fe1710b57aff17f8.webp",
+    "static/media/eshop.avif": "/static/media/eshop.ece18ed21cd2f535385e.avif",
+    "static/media/simplecounter.png": "/static/media/simplecounter.a1a975455d659de5b9e8.png",
+    "static/media/counter-clock.webp": "/static/media/counter-clock.0941709ecac9c75e7e48.webp",
+    "static/media/weather.webp": "/static/media/weather.77730ef9e7cd859950e4.webp",
+    "static/media/k.tzallasresume.pdf": "/static/media/k.tzallasresume.53b4297804b9ff0f0944.pdf",
+    "index.html": "/index.html",
+    "main.195328bf.css.map": "/static/css/main.195328bf.css.map",
+    "main.ab08247a.js.map": "/static/js/main.ab08247a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.195328bf.css",
+    "static/js/main.ab08247a.js"
+  ]
+}

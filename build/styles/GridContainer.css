@@ -1,0 +1,462 @@
+.spanYpologismos {
+  text-align: center;
+}
+
+input {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.grid-container {
+  display: grid;
+  width: 1000px;
+  height: 600px;
+  grid-gap: 7px 5px;
+  border-radius: 15px 15px;
+  background-color: rgba(26, 56, 52, 0.788);
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 80px 80px 40px 70px 45px;
+  text-align: center;
+}
+
+.grid-container > div {
+  background-color: blueviolet;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 2px solid black;
+  color: white;
+}
+/*DMPP*/
+.grid-container > div:nth-child(1) {
+  background-color: rgb(72, 153, 25);
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+/*H3PO4*/
+.grid-container > div:nth-child(2) {
+  background-color: rgb(222, 245, 224);
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+/*DMP*/
+.grid-container > div:nth-child(3) {
+  background-color: rgb(141, 143, 8);
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+/*COLOR*/
+.grid-container > div:nth-child(4) {
+  background-color: rgb(24, 128, 30);
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+/*YELLOW*/
+.grid-container > div:nth-child(5) {
+  background-color: rgb(251, 255, 38);
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+/*BLUE*/
+.grid-container > div:nth-child(6) {
+  background-color: rgb(6, 43, 253);
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+/*Kilos/tons*/
+.grid-container > div:nth-child(7) {
+  background-color: rgb(211, 102, 12);
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+/*litre/tons*/
+.grid-container > div:nth-child(8) {
+  background-color: rgb(48, 151, 58);
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+/*save button*/
+.grid-container > div:nth-child(9) {
+  background-color: rgb(42, 189, 118);
+  font-size: 26px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+}
+/*input for tons */
+.grid-container > div:nth-child(10) {
+  background-color: rgb(253, 196, 89);
+  font-size: 26px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+}
+
+/*input for kilos in reactor */
+.grid-container > div:nth-child(11) {
+  background-color: rgb(109, 7, 100);
+  font-size: 26px;
+  color: rgb(255, 249, 249);
+  font-weight: bold;
+  text-align: center;
+}
+
+/*Υπολογισμος*/
+.grid-container > div:nth-child(12) {
+  background-color: rgb(218, 147, 165);
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/*Διαχωρισμός*/
+.grid-container > div:nth-child(13) {
+  background-color: rgb(24, 180, 58);
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 30px;
+}
+/*Διαχωρισμος Span*/
+.grid-container > div:nth-child(14) {
+  text-align: center;
+  background-color: rgb(248, 248, 248);
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+}
+/*Υπολογισμος Span*/
+.grid-container > div:nth-child(15) {
+  background-color: rgb(248, 248, 248);
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+/*action buttons*/
+.child1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+/*All*/
+.childall {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+/*Input Τονοι*/
+.child9 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.child10 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.child12 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.spanYpologismos {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.spanDiaxorismos {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.img {
+  position: absolute;
+}
+
+/*Hover Διαχωρισμος*/
+.grid-container > div:nth-child(12):hover {
+  background: rgba(206, 70, 165, 0.979);
+  box-shadow: 0 0 2px rgba(206, 70, 165, 0.979),
+    0 0 2px rgba(206, 70, 165, 0.979), 0 0 2px rgba(206, 70, 165, 0.979),
+    0 0 2px rgba(206, 70, 165, 0.979);
+}
+
+/*Hover Υπολογισμος*/
+.grid-container > div:nth-child(13):hover {
+  background: rgba(6, 247, 26, 0.979);
+  box-shadow: 0 0 2px rgba(6, 247, 26, 0.979), 0 0 2px rgba(6, 247, 26, 0.979),
+    0 0 2px rgba(6, 247, 26, 0.979), 0 0 2px rgba(6, 247, 26, 0.979);
+}
+
+/*Save button*/
+.grid-container > div:nth-child(9):hover {
+  background: rgb(76, 255, 168);
+  box-shadow: 0 0 2px rgb(108, 255, 184), 0 0 2px rgb(98, 255, 179),
+    0 0 2px rgb(42, 189, 118), 0 0 2px rgb(42, 189, 118);
+}
+
+.grid-container2 {
+  display: grid;
+ width: 1015px;
+  height: auto;
+  grid-gap: 25px 30px;
+  border-radius: 15px 15px;
+  background-color: rgb(255, 255, 255);
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 95%;
+  text-align: center;
+}
+/*
+.grid-container2 > div:nth-child(1) {
+  background-color: rgb(95, 245, 9);
+  border-radius: 5px;
+  border: 2px solid black;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+*/
+
+.grid-container2 > div:nth-child(1) {
+  background-color: rgba(255, 255, 255, 0.973);
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+}
+
+.grid-container2 > div {
+  background-color: blueviolet;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 2px solid black;
+  color: white;
+}
+
+.childall2 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+@media screen and (max-device-width: 480px) {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    grid-gap: 3px 6px;
+    border-radius: 5px 5px;
+    background-color: rgba(196, 255, 247, 0.507);
+    text-align: center;
+  }
+
+  
+
+  .grid-container > div {
+    background-color: blueviolet;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 2px solid black;
+    color: white;
+  }
+
+  /*DMPP*/
+  .grid-container > div:nth-child(1) {
+    background-color: rgb(72, 153, 25);
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    float: left;
+  }
+
+  /*H3PO4*/
+  .grid-container > div:nth-child(2) {
+    background-color: rgb(222, 245, 224);
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    float: left;
+  }
+
+  /*DMP*/
+  .grid-container > div:nth-child(3) {
+    background-color: rgb(141, 143, 8);
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    float: left;
+  }
+
+  /*COLOR*/
+  .grid-container > div:nth-child(4) {
+    background-color: rgb(24, 128, 30);
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 100%;
+  }
+
+  /*YELLOW*/
+  .grid-container > div:nth-child(5) {
+    background-color: rgb(251, 255, 38);
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 100%;
+  }
+
+  /*BLUE*/
+  .grid-container > div:nth-child(6) {
+    background-color: rgb(6, 43, 253);
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 100%;
+  }
+
+  /*Kilos/tons*/
+  .grid-container > div:nth-child(7) {
+    background-color: rgb(211, 102, 12);
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    align-self: center;
+    width: 100%;
+  }
+
+  /*litre/tons*/
+  .grid-container > div:nth-child(8) {
+    background-color: rgb(48, 151, 58);
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    align-self: center;
+    width: 100%;
+  }
+
+  /*input for tons 
+  .grid-container > div:nth-child(9) {
+    background-color: rgb(253, 167, 6);
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  */
+
+  /*save button */
+  .grid-container > div:nth-child(9) {
+    background-color: rgb(42, 189, 118);
+    font-size: 15px;
+    color: rgb(255, 249, 249);
+    align-self: center;
+    width: 100%;
+  }
+  /*Υπολογισμος input*/
+  .grid-container > div:nth-child(10) {
+    background-color: rgb(253, 196, 89);
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    align-self: center;
+    width: 100%;
+  }
+  /*Διαχώρισμος input*/
+  .grid-container > div:nth-child(11) {
+    background-color: rgb(109, 7, 100);
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    align-self: center;
+    width: 100%;
+  }
+
+  /*Υπολογισμος button*/
+  .grid-container > div:nth-child(12) {
+    background-color: rgb(218, 147, 165);
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 100%;
+  }
+
+  /*Διαχωρισμος Button*/
+  .grid-container > div:nth-child(13) {
+    background-color: rgb(24, 180, 58);
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 100%;
+  }
+
+  .child1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  .childall {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .child9 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .img {
+    position: relative;
+  }
+
+  .grid-container2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    grid-gap: 3px 6px;
+    border-radius: 5px 5px;
+    background-color: rgba(196, 255, 247, 0.507);
+    text-align: center;
+  }
+
+  .grid-container2 > div:nth-child(1) {
+    background-color: rgba(255, 255, 255, 0.973);
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+  }
+  .grid-container2 > div {
+    background-color: blueviolet;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 2px solid black;
+    color: white;
+  }
+
+  .childall2 {
+    grid-column-start: 0;
+    grid-column-end: 2;
+  }
+
+  table {
+    border-spacing: 0px;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+  }
+
+  thead th:not(:first-child) {
+    display: none;
+    border-color: black;
+  }
+  td,
+  th {
+    display: block;
+    clear: both;
+  }
+  td[data-th]:before {
+    content: attr(data-th);
+    float: left;
+  }
+}

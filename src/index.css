@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --color-bg: #131515;
+  --color-bg-variant: #1c3130;
+  --color-primary: #a3fff4;
+  --color-primary-variant: #216e63;
+  --color-white: #fff;
+  --color-light: #f6fff8;
+
+  --transition: all 400ms ease;
+
+  --container-width-lg: 75%;
+  --container-width-md: 85%;
+  --container-width-sm: 90%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-white);
+  line-height: 1.7;
+  background-image: url(../src/assets/bg.png);
+  background-repeat: repeat;
+  background-size: 30px;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+/* ========= GENERAL STYLES ==========*/
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+section {
+  min-height: 100vh;
+  margin-bottom: 8rem;
+}
+
+section > h2,
+section > h5 {
+  padding-top: 1.5rem;
+  text-align: center;
+  color: var(--color-light);
+}
+
+section > h2 {
+  color: var(--color-primary);
+  margin-bottom: 3rem;
+}
+
+.text-light {
+  color: var(--color-light);
+}
+
+a {
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-white);
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--color-primary);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background-color: var(--color-white);
+  color: var(--color-bg);
+  border-color: transparent;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ======= MEDIA QUERIES (MEDIUM DEVICES) =======*/
+@media screen and (max-width: 1280px) {
+  .container {
+    width: var(--container-width-md); /* Ensure this variable is defined correctly */
+  }
+  section {
+    margin: 2rem; /* Adjust margin for better spacing */
+  }
+}
+
+/* ======= MEDIA QUERIES (LARGE DEVICES) =======*/
+@media screen and (max-width: 1387px) {
+  .container {
+    width: var(--container-width-lg); /* Adjust if necessary */
+  }
+  section {
+    margin: 1.5rem; /* Adjust margin for better spacing */
+  }
+}
+
+/* ======= MEDIA QUERIES (MEDIUM DEVICES) =======*/
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+  section {
+    margin: 2rem;
+  }
+}
+
+/* ======= MEDIA QUERIES (SMALL DEVICES) =======*/
+@media screen and (max-width: 480px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+  section > h2 {
+    margin: 0rem;
+  }
+}
+
